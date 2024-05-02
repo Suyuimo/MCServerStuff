@@ -10,3 +10,5 @@ sleep 20
 
 # Stope den Server
 screen -S minecraft -X stuff "stop \n"
+screen -X -S noipv4 kill
+screen -X -S noipv6 kill
