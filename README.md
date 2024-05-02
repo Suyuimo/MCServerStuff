@@ -5,6 +5,4 @@ Damit dieser Code funktioniert muss dass Paket screen und cifs-utils installiert
 
 Alle Linux Systeme mit Debian unterbau:
 
-apt install screen
-
-apt install cifs-utils
+apt install screen cifs-utils
