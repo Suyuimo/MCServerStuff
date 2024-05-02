@@ -5,6 +5,9 @@ smbserver=xxx
 smbusername=xxx
 smbpassword=xxx
 
+#Backup auf SMB Server?
+smbbackup=y # n für Nein, y für Ja
+
 # Lokales Backup nach kopieren auf den SMB Server löschen?
 deletelocalbackup=y # n für Nein, y für Ja
 
