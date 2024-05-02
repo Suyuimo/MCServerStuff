@@ -20,12 +20,16 @@ time=$(date +%F_%H:%M:%S)
 screen -S minecraft -X stuff "say Die Welt wird nun gesichert \n"
 screen -S minecraft -X stuff "say Der Server wird dabei kurz neugestartet
 
+# Server stoppen
 ./stop.sh
 
+# Backup Verzeichnis erstellen
 mkdir ../server-$date-$time
 
+# Backup erstellen
 cp -R * ../server-$date-$time
 
+# Backup SMB
 if [ $smbbackup == 'y' ]
 then
 mkdir ../smbserver
@@ -34,10 +38,11 @@ cp -R ./server-$date-$time ../smbserver
 umount ../smbserver
 fi
 
+# Lösche lokales Backup
 if [ $deletelocalbackup == 'y' ]
 then
 rm -R ../server-$date-$time
 fi
 
+# Server starten
 ./start.sh
-rm -R 
