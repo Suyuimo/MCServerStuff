@@ -4,6 +4,7 @@
 smbserver=xxx
 smbusername=xxx
 smbpassword=xxx
+smbshare=xxx
 
 #Backup auf SMB Server?
 smbbackup=y # n für Nein, y für Ja
@@ -25,3 +26,18 @@ mkdir ../server-$date-$time
 
 cp -R * ../server-$date-$time
 
+if [ $smbbackup == 'y' ]
+then
+mkdir ../smbserver
+mount -t cifs -o username=$smbusername,password=$smbpassword,vers=3.0 //$smbserver/$smbshare ../smbserver
+cp -R ./server-$date-$time ../smbserver
+umount ../smbserver
+fi
+
+if [ $deletelocalbackup == 'y' ]
+then
+rm -R ../server-$date-$time
+fi
+
+./start.sh
+rm -R 
