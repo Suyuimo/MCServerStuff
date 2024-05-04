@@ -29,6 +29,7 @@ mkdir ../server-$date-$time
 
 # Backup erstellen
 cp -R * ../server-$date-$time
+tar -cf ../server-$date-$time.tar ../server-$date-$time
 
 # Backup SMB
 if [ $smbbackup == 'y' ]
@@ -44,6 +45,7 @@ fi
 if [ $deletelocalbackup == 'y' ]
 then
 rm -R ../server-$date-$time
+rm ../server-$date-$time.tar
 fi
 
 # Server starten
