@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Variabeln
-javaxmx=XX #7G
+javamax=XX #7G
 serverjarfile=spigot-1.20.4.jar # spigot-1.20.4.jar in meinem Beispiel.
 
 #noip DDNS Update Key
