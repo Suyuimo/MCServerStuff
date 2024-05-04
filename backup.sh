@@ -19,7 +19,7 @@ time=$(date +%F_%H:%M:%S)
 
 #Info an alle Spieler
 screen -S minecraft -X stuff "say Die Welt wird nun gesichert \n"
-screen -S minecraft -X stuff "say Der Server wird dabei kurz neugestartet
+screen -S minecraft -X stuff "say Der Server wird dabei kurz neugestartet"
 
 # Server stoppen
 ./stop.sh
