@@ -36,6 +36,7 @@ mkdir ../smbserver
 mount -t cifs -o username=$smbusername,password=$smbpassword,vers=3.0 //$smbserver/$smbshare ../smbserver
 cp -R ./server-$date-$time ../smbserver
 umount ../smbserver
+rm -R ../smbserver
 fi
 
 # Lösche lokales Backup
