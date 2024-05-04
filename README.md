@@ -5,7 +5,7 @@ Damit dieser Code funktioniert muss dass Paket screen und cifs-utils installiert
 
 Alle Linux Systeme mit Debian unterbau:
 
-apt install screen cifs-utils
+apt install screen libglib2.0-dev
 
 Im crontab wird folgender Befehl eingetragen um Täglich das Backup Skript zu starten:
 
