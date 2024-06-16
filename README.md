@@ -1,11 +1,11 @@
 # MCServerStuff
 Ein Repo für Minecraft Server Skripte
 
-Damit dieser Code funktioniert muss dass Paket screen, cifs-utils und noip-duc client installiert sein.
+Damit dieser Code funktioniert muss dass Paket screen, cifs-utils, git und noip-duc client installiert sein.
 
 Alle Linux Systeme mit Debian unterbau:
 
-apt install screen libglib2.0-dev cifs-utils
+apt install screen libglib2.0-dev cifs-utils git
 
 und für duc folgende Befehle:
 
