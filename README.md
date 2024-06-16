@@ -12,7 +12,7 @@ und für duc folgende Befehle:
 1. wget --content-disposition https://www.noip.com/download/linux/latest
 2. Mit ls dei Versionsnummer herausfinden nip-duc_X.X.X.tar.gz
 3. tar xf noip-duc_X.X.X.tar.gz
-cd noip-duc_X.X.X/binaries && sudo apt install ./noip-duc_X.X.X_amd64.deb
+4. cd noip-duc_X.X.X/binaries && sudo apt install ./noip-duc_X.X.X_amd64.deb
 
 Im crontab wird folgender Befehl eingetragen um Täglich das Backup Skript zu starten:
 
